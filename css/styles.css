@@ -4,6 +4,7 @@
   --accent-color: #2196f3;
   --base-bg-color: #ffffff;
   --secondary-bg-color: #2f303a;
+  --section-bg-color: #f5f4fa;
 }
 
 h1,
@@ -14,6 +15,7 @@ h5,
 h6,
 p {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .list {
@@ -57,6 +59,8 @@ header {
 
 .nav-container {
   display: flex;
+  align-items: center;
+  min-height: 80px;
 }
 
 .nav-section {
@@ -67,8 +71,6 @@ header {
 .site-nav,
 .contacts {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   font-weight: 500;
   font-size: 14px;
@@ -196,6 +198,7 @@ header {
 }
 
 .section-title {
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -215,8 +218,8 @@ header {
   flex-basis: calc((100% - 90px) / 3);
 }
 
-.team-title {
-  margin-bottom: 50px;
+.team-section {
+  background-color: var(--section-bg-color);
 }
 
 .team-list {
@@ -227,31 +230,33 @@ header {
 }
 
 .staff-card {
+  flex-basis: calc((100% - 120px) / 4);
   margin-left: 30px;
   margin-top: 30px;
-  flex-basis: calc((100% - 120px) / 4);
+
   text-align: center;
 
-  background: #ffffff;
+  background-color: var(--base-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   border-color: transparent;
 }
 
 .staff-name {
-  margin-top: 30px;
   margin-bottom: 10px;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
 
 .staff-proffesion {
-  margin-bottom: 30px;
   color: var(--text-color);
   font-size: 16px;
   line-height: 1.19;
+}
+
+.staff-description {
+  padding: 30px 32px;
 }
 
 footer {
@@ -270,6 +275,7 @@ footer {
 }
 
 .post-address {
+  margin-bottom: 9px;
   color: var(--base-bg-color);
   font-style: normal;
 }
@@ -279,11 +285,16 @@ footer {
   font-style: normal;
 }
 
+.contacts-footer > .mail {
+  margin-bottom: 9px;
+}
+
 /* Portfolio */
 
 .filter-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .project-list {
@@ -305,7 +316,6 @@ footer {
   background-color: #f5f4fa;
   padding: 8px 22px;
   margin-left: 8px;
-  margin-bottom: 50px;
 
   font-weight: 500;
   font-size: 16px;
